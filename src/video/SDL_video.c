@@ -3027,6 +3027,10 @@ void SDL_SetWindowKeyboardGrab(SDL_Window *window, SDL_bool grabbed)
     SDL_UpdateWindowGrab(window);
 }
 
+void SDL_SetKeyboardGrab(SDL_Window *window, SDL_bool grabbed){
+    SDL_SetWindowKeyboardGrab(window, grabbed);
+}
+
 void SDL_SetWindowMouseGrab(SDL_Window *window, SDL_bool grabbed)
 {
     CHECK_WINDOW_MAGIC(window, );
@@ -3083,6 +3087,10 @@ int SDL_SetWindowMouseRect(SDL_Window *window, const SDL_Rect *rect)
         _this->SetWindowMouseRect(_this, window);
     }
     return 0;
+}
+
+int SDL_ConfineCursor(SDL_Window *window, const SDL_Rect *rect){
+    return SDL_SetWindowMouseRect(window, rect);
 }
 
 const SDL_Rect *SDL_GetWindowMouseRect(SDL_Window *window)

@@ -1428,6 +1428,9 @@ extern DECLSPEC void SDLCALL SDL_SetWindowGrab(SDL_Window * window,
 extern DECLSPEC void SDLCALL SDL_SetWindowKeyboardGrab(SDL_Window * window,
                                                        SDL_bool grabbed);
 
+extern DECLSPEC void SDLCALL SDL_SetKeyboardGrab(SDL_Window * window,
+                                                       SDL_bool grabbed);
+
 /**
  * Set a window's mouse grab mode.
  *
@@ -1513,7 +1516,7 @@ extern DECLSPEC SDL_Window * SDLCALL SDL_GetGrabbedWindow(void);
  * \sa SDL_SetWindowMouseGrab
  */
 extern DECLSPEC int SDLCALL SDL_SetWindowMouseRect(SDL_Window * window, const SDL_Rect * rect);
-
+extern DECLSPEC int SDLCALL SDL_ConfineCursor(SDL_Window * window, const SDL_Rect * rect);
 /**
  * Get the mouse confinement rectangle of a window.
  *

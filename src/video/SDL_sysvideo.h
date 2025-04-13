@@ -252,6 +252,7 @@ struct SDL_VideoDevice
     void* (*GetWindowICCProfile) (_THIS, SDL_Window * window, size_t* size);
     int (*GetWindowDisplayIndex)(_THIS, SDL_Window * window);
     void (*SetWindowMouseRect)(_THIS, SDL_Window * window);
+    void (*ConfineCursor)(_THIS, SDL_Window * window);
     void (*SetWindowMouseGrab) (_THIS, SDL_Window * window, SDL_bool grabbed);
     void (*SetWindowKeyboardGrab) (_THIS, SDL_Window * window, SDL_bool grabbed);
     void (*DestroyWindow) (_THIS, SDL_Window * window);

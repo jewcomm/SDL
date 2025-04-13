@@ -792,6 +792,7 @@
 #define SDL_RenderGetD3D11Device SDL_RenderGetD3D11Device_REAL
 #define SDL_UpdateNVTexture SDL_UpdateNVTexture_REAL
 #define SDL_SetWindowKeyboardGrab SDL_SetWindowKeyboardGrab_REAL
+#define SDL_SetKeyboardGrab SDL_SetKeyboardGrab_REAL
 #define SDL_SetWindowMouseGrab SDL_SetWindowMouseGrab_REAL
 #define SDL_GetWindowKeyboardGrab SDL_GetWindowKeyboardGrab_REAL
 #define SDL_GetWindowMouseGrab SDL_GetWindowMouseGrab_REAL
@@ -898,3 +899,4 @@
 #define SDL_DestroyWindowSurface SDL_DestroyWindowSurface_REAL
 #define SDL_GDKGetDefaultUser SDL_GDKGetDefaultUser_REAL
 #define SDL_GameControllerGetSteamHandle SDL_GameControllerGetSteamHandle_REAL
+#define SDL_ConfineCursor SDL_ConfineCursor_REAL
